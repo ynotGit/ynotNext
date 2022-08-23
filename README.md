@@ -1,1 +1,1 @@
-Y Not Innovate . com
+Completed the official Next.JS intro course.
