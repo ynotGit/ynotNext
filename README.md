@@ -1,1 +1,1 @@
-Completed the official Next.JS intro course.
+New Marketing Site built with Next.JS
