@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/layout.module.css';
 import Link from 'next/link';
+import Nav from '../components/nav'
 
 export const siteTitle = 'Y Not Innovate';
 
 export default function Layout({ children, home }) {
     return (
-        <div className={styles.container}>
+        <div className="max-w-36 px-12">
             <Head>
                 <link rel="icon" href="/images/favicon.png" />
                 <meta
@@ -17,12 +16,14 @@ export default function Layout({ children, home }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <header className={styles.header}>
-                <p className="text-2xl font-bold underline">test</p>
+
+            <header className="grid grid-cols-1">
+                <Nav />
             </header>
+
             <main>{children}</main>
             {!home && (
-                <div className={styles.backToHome}>
+                <div className="mt-1">
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
