@@ -39,14 +39,14 @@ export default function Nav() {
                 >
                     <div
                         className={`${hamburgerLineTopBottom} ${isOpen
-                            ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                            ? "w-8 rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
                             : "opacity-50 group-hover:opacity-100"
                             }`}
                     />
                     <div className={`${hamburgerLineMiddle} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
                     <div
                         className={`${hamburgerLineTopBottom} ${isOpen
-                            ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                            ? "w-8 -rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
                             : "opacity-50 group-hover:opacity-100"
                             }`}
                     />
