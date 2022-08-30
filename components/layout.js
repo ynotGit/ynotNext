@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Nav from '../components/nav'
+import Header from '../components/header'
 
 export const siteTitle = 'Y Not Innovate';
 
@@ -17,9 +17,9 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
-            <header className="grid grid-cols-1">
-                <Nav />
-            </header>
+
+            <Header className="grid grid-cols-1" />
+
 
             <main>{children}</main>
             {!home && (
