@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 export const siteTitle = 'Y Not Innovate';
 
@@ -17,9 +18,7 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
-
             <Header className="grid grid-cols-1" />
-
 
             <main>{children}</main>
             {!home && (
@@ -29,7 +28,8 @@ export default function Layout({ children, home }) {
                     </Link>
                 </div>
             )}
-            <footer><p>footer</p></footer>
+
+            <Footer />
         </div>
     );
 }
