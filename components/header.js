@@ -2,15 +2,18 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTheme } from 'next-themes'
+import { BsMoonStars, BsFillSunFill } from 'react-icons/bs';
 
-export default function Nav() {
+export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const hamburgerLineTopBottom = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
-    const hamburgerLineMiddle = `h-1 w-4 my-1 ml-1.5 rounded-full bg-black transition ease transform duration-300`;
+    const hamburgerLineTopBottom = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 dark:bg-white`;
+    const hamburgerLineMiddle = `h-1 w-4 my-1 ml-1.5 rounded-full bg-black transition ease transform duration-300 dark:bg-white`;
+    const { theme, setTheme } = useTheme();
 
     return (
         <header>
-            <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 md:py-4 text-lg text-gray-700 bg-white">
+            <nav className="flex flex-wrap items-center justify-between w-full py-4 text-lg text-gray-700">
                 <div>
                     <a href="#">
                         <Image
@@ -43,11 +46,23 @@ export default function Nav() {
                 </button>
 
                 <div className="max-h-30 w-full px-4 md:flex md:items-center md:w-auto" id="menu">
-                    {/* <ul className="text-base text-gray-700 md:flex md:justify-between md:pt-0"> */}
                     <ul className={`${isOpen
-                        ? "text-base text-gray-700 md:flex md:justify-between md:pt-0"
+                        ? "transition-height duration-1000 ease-in-out text-base text-gray-700 md:flex md:justify-between md:pt-0"
                         : "hidden text-base text-gray-700 md:flex md:justify-between md:pt-0"
                         }`} >
+                        <li className="pl-4 md:pt-1  text-right">
+                            <button
+                                aria-label="Toggle Dark Mode"
+                                type="button"
+                                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                            >
+                                {theme === 'light' ? (
+                                    <BsMoonStars className="text-blue-500 w-5 h-5" />
+                                ) : (
+                                    <BsFillSunFill className="text-blue-400 w-5 h-5" />
+                                )}
+                            </button>
+                        </li>
                         <li className="pl-4 md:pt-1  text-right">
                             <Link className="md:p-4 py-2 block hover:text-purple-400" href="#"
                             >About</Link>
