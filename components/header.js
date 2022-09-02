@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTheme } from 'next-themes'
@@ -16,12 +16,21 @@ export default function Header() {
             <nav className="flex flex-wrap items-center justify-between w-full py-4 text-lg text-gray-700">
                 <div>
                     <a href="#">
-                        <Image
-                            src="/images/logo-white.png"
-                            alt="Picture of the author"
-                            width={70}
-                            height={70}
-                        />
+                        {theme === 'light' ? (
+                            <Image
+                                src="/images/logo.png"
+                                alt="Picture of the author"
+                                width={70}
+                                height={70}
+                            />
+                        ) : (
+                            <Image
+                                src="/images/logo-white.png"
+                                alt="Picture of the author"
+                                width={70}
+                                height={70}
+                            />
+                        )}
                     </a>
                 </div>
 
