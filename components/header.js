@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Head from 'next/head';
 import { useTheme } from 'next-themes'
 import { BsMoonStars, BsFillSunFill } from 'react-icons/bs';
 
@@ -17,22 +16,24 @@ export default function Header() {
 
     return (
         <header>
-            <nav className="flex flex-wrap items-center justify-between w-full py-4 text-lg text-gray-700">
+            <nav className="m-w-36 px-12 pt-2 pb-2 flex flex-wrap items-center justify-between w-full text-lg text-gray-700">
                 <div>
-                    <a href="#">
+                    <a href="#" className="flex items-center">
                         {theme === 'light' ? (
                             <Image
                                 src="/images/logo.png"
                                 alt="Picture of the author"
-                                width={70}
-                                height={70}
+                                width={60}
+                                height={60}
+                                className="flex items-center"
                             />
                         ) : (
                             <Image
                                 src="/images/logo-white.png"
                                 alt="Picture of the author"
-                                width={70}
-                                height={70}
+                                width={60}
+                                height={60}
+                                className="flex items-center"
                             />
                         )}
                     </a>

@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import Landing from '../components/landingSection';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -19,6 +20,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Landing />
       <section>
         <p>[Your Self Introduction]</p>
         <p>
