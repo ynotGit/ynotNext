@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <header>
-            <nav className="m-w-36 px-4 pt-2 pb-2 flex flex-wrap items-center justify-between w-full text-lg text-gray-700">
+            <nav className="m-w-36 px-2 pt-2 pb-2 flex flex-wrap items-center justify-between w-full text-lg text-gray-700">
                 <div>
                     <a href="#" className="flex items-center">
                         {theme === 'light' ? (
@@ -71,28 +71,27 @@ export default function Header() {
                                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                             >
                                 {theme === 'light' ? (
-                                    <BsMoonStars className="text-blue-500 w-5 h-5" />
+                                    <BsMoonStars className="text-black dark:text-white w-5 h-5" />
                                 ) : (
-                                    <BsFillSunFill className="text-blue-400 w-5 h-5" />
+                                    <BsFillSunFill className="text-black dark:text-white w-5 h-5" />
                                 )}
                             </button>
                         </li>
-                        <li className="pl-4 md:pt-1  text-right">
-                            <Link className="md:p-4 py-2 block hover:text-purple-400" href="#"
+                        <li className="pl-4 md:pt-1 text-black dark:text-white">
+                            <Link className="md:p-4 py-2 block" href="#"
                             >About</Link>
                         </li>
-                        <li className="pl-4 pt-1 text-right">
-                            <Link className="md:p-4 py-2 block hover:text-purple-400" href="#"
+                        <li className="pl-4 pt-1 text-right text-black dark:text-white">
+                            <Link className="md:p-4 py-2 block" href="#"
                             >Services</Link>
                         </li>
-                        <li className="pl-4 pt-1 text-right">
-                            <Link className="md:p-4 py-2 block hover:text-purple-400" href="#"
+                        <li className="pl-4 pt-1 text-right text-black dark:text-white">
+                            <Link className="md:p-4 py-2 block" href="#"
                             >Blog</Link>
                         </li>
-                        <li className="pl-4 pt-1 text-right">
+                        <li className="pl-4 pt-1 text-right text-black dark:text-white">
                             <Link
-                                className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-                                href="#"
+                                className="md:p-4 py-2 block" href="#"
                             >Contact</Link>
                         </li>
                     </ul>

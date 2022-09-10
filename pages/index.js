@@ -4,6 +4,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 import Landing from '../components/landingSection';
+import MissionStatement from '../components/missionStatement';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -21,6 +22,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <Landing />
+      <MissionStatement />
       <section className="px-4">
         <p>[Your Self Introduction]</p>
         <p>
