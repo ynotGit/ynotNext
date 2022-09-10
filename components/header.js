@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <header>
-            <nav className="m-w-36 px-12 pt-2 pb-2 flex flex-wrap items-center justify-between w-full text-lg text-gray-700">
+            <nav className="m-w-36 px-4 pt-2 pb-2 flex flex-wrap items-center justify-between w-full text-lg text-gray-700">
                 <div>
                     <a href="#" className="flex items-center">
                         {theme === 'light' ? (

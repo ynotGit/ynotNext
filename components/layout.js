@@ -10,7 +10,7 @@ export default function Layout({ children, home }) {
         <>
             <div className="max-w-36">
                 <Head>
-                    <link rel="icon" href="/images/favicon.png" />
+                    {/* <link rel="icon" href="/images/favicon.png" /> */}
                     <meta
                         name="description"
                         content="Y Not Innovate Web Development"

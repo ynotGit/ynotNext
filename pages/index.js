@@ -21,14 +21,14 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <Landing />
-      <section>
+      <section className="px-4">
         <p>[Your Self Introduction]</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
-      <section >
+      <section className="px-4">
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
