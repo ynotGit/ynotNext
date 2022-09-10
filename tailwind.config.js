@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       transitionProperty: {
         'height': 'height'
-      }
+      },
     },
   },
   plugins: [],
