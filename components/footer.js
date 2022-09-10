@@ -45,13 +45,13 @@ export default function Footer() {
                         </a>
                         <p>Y Not Innovate || Something Something</p>
                         <div className="flex">
-                            <a href="" className="text-3xl pt-2 pr-2 hover:text-purple-400 text-purple-500">
+                            <a href="" className="text-3xl pt-2 pr-2 text-black dark:text-white ">
                                 <AiFillTwitterCircle />
                             </a>
-                            <a href="" className="text-3xl pt-2 pr-2 hover:text-purple-400 text-purple-500">
+                            <a href="" className="text-3xl pt-2 pr-2 text-black dark:text-white ">
                                 <AiFillGithub />
                             </a>
-                            <a href="" className="text-3xl pt-2 hover:text-purple-400 text-purple-500">
+                            <a href="" className="text-3xl pt-2 text-black dark:text-white ">
                                 <AiFillLinkedin />
                             </a>
                         </div>
