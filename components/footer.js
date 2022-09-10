@@ -11,7 +11,7 @@ export default function Footer() {
     if (!mounted) return null;
 
     return (
-        <footer className="p-4">
+        <footer className="px-4 py-16">
             <div className="m-w-36 px-4 ">
                 <div className="text-center">
                     <h2>
@@ -79,9 +79,6 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div className="text-center">
-                    <p>Crafted With Pride | 2022</p>
                 </div>
             </div>
         </footer>
