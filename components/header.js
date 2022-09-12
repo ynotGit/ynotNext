@@ -77,7 +77,7 @@ export default function Header() {
                                 )}
                             </button>
                         </li>
-                        <li className="pl-4 md:pt-1 text-black dark:text-white">
+                        <li className="pl-4 md:pt-1 text-right text-black dark:text-white">
                             <Link className="md:p-4 py-2 block" href="#"
                             >About</Link>
                         </li>
