@@ -19,11 +19,9 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
-            <div className="max-w-36">
-                <Header className="grid grid-cols-1" />
-                <Landing />
-            </div>
-            <main className="m-auto max-w-2xl px-4">
+            <Header className="grid grid-cols-1" />
+
+            <main>
                 {children}
             </main>
             {!home && (

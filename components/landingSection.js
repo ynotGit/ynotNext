@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Landing() {
     return (
-        <>
+        <section>
             <div className="relative mb-8">
                 <video autoPlay loop muted className="rotate-180 max-h-90">
                     <source src="/video/landing-vid.mp4" />
@@ -20,6 +20,6 @@ export default function Landing() {
                     <p>Design • Develop • Innovate</p>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
