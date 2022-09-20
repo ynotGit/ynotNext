@@ -3,7 +3,6 @@ import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
-import Landing from '../components/landingSection';
 import MissionStatement from '../components/missionStatement';
 import Form from '../components/form';
 
@@ -22,7 +21,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Landing />
+
       <MissionStatement />
       <Form />
       <section className="px-4">

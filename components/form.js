@@ -7,7 +7,7 @@ export default function Form() {
                 <form action="#" method="post" className="mt-6">
                     <div className="relative mb-8">
                         <input id="name" name="name" type="text"
-                            className="w-full h-10 p-1 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:border-green-600"
+                            className="w-full h-6 p-1 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:border-green-600"
                             placeholder="Your Name" required />
                         <label htmlFor="name"
                             className="absolute left-0 text-sm transition-all peer-placeholder-shown:text-base peer-focus:text-sm  peer-focus:text-green-600">
@@ -15,7 +15,7 @@ export default function Form() {
                     </div>
                     <div className="relative mb-8">
                         <input id="email" name="email" type="text"
-                            className="w-full h-10 p-1 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:border-green-600"
+                            className="w-full h-6 p-1 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:border-green-600"
                             placeholder="john@doe.com" required />
                         <label htmlFor="email"
                             className="absolute left-0 text-sm transition-all peer-placeholder-shown:text-base peer-focus:text-sm  peer-focus:text-green-600">Email

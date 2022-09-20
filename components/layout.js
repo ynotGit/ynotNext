@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/header'
+import Landing from '../components/landingSection';
 import Footer from '../components/footer'
 
 export const siteTitle = 'Y Not Innovate';
@@ -8,31 +9,32 @@ export const siteTitle = 'Y Not Innovate';
 export default function Layout({ children, home }) {
     return (
         <>
-            <div className="max-w-36">
-                <Head>
-                    <link rel="icon" href="/images/favicon.png" />
-                    <meta
-                        name="description"
-                        content="Y Not Innovate Web Development"
-                    />
-                    <meta name="og:title" content={siteTitle} />
-                    <meta name="twitter:card" content="summary_large_image" />
-                </Head>
+            <Head>
+                <link rel="icon" href="/images/favicon.png" />
+                <meta
+                    name="description"
+                    content="Y Not Innovate Web Development"
+                />
+                <meta name="og:title" content={siteTitle} />
+                <meta name="twitter:card" content="summary_large_image" />
+            </Head>
 
+            <div className="max-w-36">
                 <Header className="grid grid-cols-1" />
+                <Landing />
             </div>
-            <div className="max-w-36">
-                <main>{children}</main>
-                {!home && (
-                    <div className="mt-1">
-                        <Link href="/">
-                            <a>← Back to home</a>
-                        </Link>
-                    </div>
-                )}
+            <main className="m-auto max-w-2xl px-4">
+                {children}
+            </main>
+            {!home && (
+                <div className="mt-1">
+                    <Link href="/">
+                        <a>← Back to home</a>
+                    </Link>
+                </div>
+            )}
 
-                <Footer />
-            </div>
+            <Footer />
         </>
     );
 }
