@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { useState, useEffect } from 'react';
+import CTAButton from './ctaButton';
 
 export default function Footer() {
     const { theme } = useTheme();
@@ -18,9 +19,7 @@ export default function Footer() {
                         Ready To Something Something...
                     </h2>
                     <p>Blah Blah Blah Blah Blah Blah</p>
-                    <button>
-                        Contact Us Now
-                    </button>
+                    <CTAButton />
                 </div>
                 <div className="grid grid-cols-1 pt-3 md:grid-cols-2">
                     <div className="">

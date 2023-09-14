@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import CTAButton from './ctaButton'
 
 export default function Landing() {
     return (
@@ -18,6 +19,7 @@ export default function Landing() {
                         <span>Y Not Innovate</span>
                     </h1>
                     <p>Design • Develop • Innovate</p>
+                    <CTAButton />
                 </div>
             </div>
         </section>
