@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
 
             <Header className="grid grid-cols-1" />
 
-            <main>
+            <main className="p-2">
                 {children}
             </main>
             {!home && (

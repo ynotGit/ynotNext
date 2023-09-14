@@ -34,26 +34,20 @@ export default function Home({ allPostsData }) {
         <Showcase />
         <section>
           <h2 className="text-center">News</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div>
-              <h2>Twitter Feed</h2>
-            </div>
-            <div>
-              <h2>Blog</h2>
-              <ul>
-                {allPostsData.map(({ id, date, title }) => (
-                  <li key={id}>
-                    <Link href={`/posts/${id}`}>
-                      <a>{title}</a>
-                    </Link>
-                    <br />
-                    <small>
-                      <Date dateString={date} />
-                    </small>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div>
+            <ul>
+              {allPostsData.map(({ id, date, title }) => (
+                <li key={id}>
+                  <Link href={`/posts/${id}`}>
+                    <a>{title}</a>
+                  </Link>
+                  <br />
+                  <small>
+                    <Date dateString={date} />
+                  </small>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
         <Form />

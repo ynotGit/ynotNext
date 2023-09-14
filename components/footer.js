@@ -16,9 +16,11 @@ export default function Footer() {
             <div className="m-w-36 px-4 ">
                 <div className="text-center">
                     <h2>
-                        Ready To Something Something...
+                        Ready To Take Your Website To The Next Level?
                     </h2>
-                    <p>Blah Blah Blah Blah Blah Blah</p>
+                    <p>
+                        Get in touch today to see how we can help your business grow.
+                    </p>
                     <CTAButton />
                 </div>
                 <div className="grid grid-cols-1 pt-3 md:grid-cols-2">
@@ -42,7 +44,7 @@ export default function Footer() {
                                 />
                             )}
                         </a>
-                        <p>Y Not Innovate || Something Something</p>
+                        <p>Y Not Innovate || Crafted With Pride</p>
                         <div className="flex">
                             <a href="" className="text-3xl pt-2 pr-2 text-black dark:text-white ">
                                 <AiFillTwitterCircle />

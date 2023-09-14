@@ -6,7 +6,7 @@ export default function Process() {
 
             <h2>Design</h2>
             <p>We design our digital solutions around your business needs.</p>
-            <ul>
+            <ul className="list-disc">
                 <li>Fully Responsive Website / App Design</li>
                 <li>Engaging</li>
                 <li>Templating</li>
@@ -18,7 +18,7 @@ export default function Process() {
 
             <h2>Develop</h2>
             <p>We love to code and bringing ideas to digital life.</p>
-            <ul>
+            <ul className="list-disc">
                 <li>Front End / User Interfaces</li>
                 <li>Server Side</li>
                 <li>SEO Specialist</li>
@@ -28,7 +28,7 @@ export default function Process() {
 
             <h2>Innovate</h2>
             <p>We move and evole as your buisness needs do.</p>
-            <ul>
+            <ul className="list-disc">
                 <li>Agile Approach</li>
                 <li>Fluidity</li>
                 <li>Expert Support</li>
