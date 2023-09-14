@@ -1,5 +1,6 @@
 import { GoCheck } from 'react-icons/go';
 
+
 export default function Process() {
 
     const designItems = [
@@ -26,7 +27,8 @@ export default function Process() {
     ];
 
     return (
-        <section className="py-12">
+        <section className="py-12 grid col-span-2">
+            <div className=""></div>
             <h2>A Trusted Process</h2>
             <p>We place the user at the heart of what we do. From concept to creation we can help with your entire web build process. Already got a project you need help on? Our creation process can help your project no matter what stage it is at.</p>
 

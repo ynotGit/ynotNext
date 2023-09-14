@@ -30,6 +30,8 @@ export default function Home({ allPostsData }) {
       </div>
       <div className="max-w-4xl mx-auto px-4">
         <MissionStatement />
+      </div>
+      <div className="mx-auto px-4">
         <Process />
         <Showcase />
         <section>
