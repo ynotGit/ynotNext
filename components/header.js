@@ -18,7 +18,7 @@ export default function Header() {
         <header>
             <nav className="m-w-36 px-2 pt-2 pb-2 flex flex-wrap items-center justify-between w-full text-lg text-gray-700">
                 <div>
-                    <a href="#" className="flex items-center">
+                    <a href="/" className="flex items-center">
                         {theme === 'light' ? (
                             <Image
                                 src="/images/logo.png"

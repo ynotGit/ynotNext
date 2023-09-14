@@ -4,9 +4,11 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 
-import MissionStatement from '../components/missionStatement';
-import Form from '../components/form';
 import Landing from '../components/landingSection';
+import MissionStatement from '../components/missionStatement';
+import Process from '../components/processSection';
+import Showcase from '../components/showcaseSection';
+import Form from '../components/form';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -26,37 +28,35 @@ export default function Home({ allPostsData }) {
       <div className="max-w-[100%]">
         <Landing />
       </div>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto px-4">
         <MissionStatement />
-        <section className="grid grid-cols-1 md:grid-cols-2">
-          <div>
-            <h1>Twitter Feed</h1>
-          </div>
-          <div>
-            <h2>Blog</h2>
-            <ul>
-              {allPostsData.map(({ id, date, title }) => (
-                <li key={id}>
-                  <Link href={`/posts/${id}`}>
-                    <a>{title}</a>
-                  </Link>
-                  <br />
-                  <small>
-                    <Date dateString={date} />
-                  </small>
-                </li>
-              ))}
-            </ul>
+        <Process />
+        <Showcase />
+        <section>
+          <h2 className="text-center">News</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div>
+              <h2>Twitter Feed</h2>
+            </div>
+            <div>
+              <h2>Blog</h2>
+              <ul>
+                {allPostsData.map(({ id, date, title }) => (
+                  <li key={id}>
+                    <Link href={`/posts/${id}`}>
+                      <a>{title}</a>
+                    </Link>
+                    <br />
+                    <small>
+                      <Date dateString={date} />
+                    </small>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
         <Form />
-        <section className="px-4">
-          <p>[Your Self Introduction]</p>
-          <p>
-            (This is a sample website - you’ll be building a site like this on{' '}
-            <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-          </p>
-        </section>
       </div>
     </Layout>
   );
