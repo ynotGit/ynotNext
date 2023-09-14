@@ -1,4 +1,30 @@
+import { GoCheck } from 'react-icons/go';
+
 export default function Process() {
+
+    const designItems = [
+        "Fully Responsive Website / App Design",
+        "Engaging",
+        "Templating",
+        "Custom Themes",
+        "Digital Editing",
+        "Branding Design",
+    ];
+
+    const developItems = [
+        "Front End / User Interfaces",
+        "Server Side",
+        "SEO Specialist",
+        "WordPress Wizard",
+        "Brochure, eCommerce, Marketing & Lead Generation Websites",
+    ];
+
+    const innovateItems = [
+        "Agile Approach",
+        "Fluidity",
+        "Expert Support",
+    ];
+
     return (
         <section className="py-12">
             <h2>A Trusted Process</h2>
@@ -6,32 +32,26 @@ export default function Process() {
 
             <h2>Design</h2>
             <p>We design our digital solutions around your business needs.</p>
-            <ul className="list-disc">
-                <li>Fully Responsive Website / App Design</li>
-                <li>Engaging</li>
-                <li>Templating</li>
-                <li>Custom Themes</li>
-                <li>Digital Editing
-                </li>
-                <li>Branding Design</li>
+            <ul>
+                {designItems.map((item) => (
+                    <li key={item}><GoCheck className="inline" /> {item}</li>
+                ))}
             </ul>
 
             <h2>Develop</h2>
             <p>We love to code and bringing ideas to digital life.</p>
-            <ul className="list-disc">
-                <li>Front End / User Interfaces</li>
-                <li>Server Side</li>
-                <li>SEO Specialist</li>
-                <li>WordPress Wizard</li>
-                <li>Brochure, eCommerce, Marketing & Lead Generation Websites</li>
+            <ul>
+                {developItems.map((item) => (
+                    <li key={item}><GoCheck className="inline" /> {item}</li>
+                ))}
             </ul>
 
             <h2>Innovate</h2>
             <p>We move and evole as your buisness needs do.</p>
-            <ul className="list-disc">
-                <li>Agile Approach</li>
-                <li>Fluidity</li>
-                <li>Expert Support</li>
+            <ul>
+                {innovateItems.map((item) => (
+                    <li key={item}><GoCheck className="inline" /> {item}</li>
+                ))}
             </ul>
         </section>
     )
