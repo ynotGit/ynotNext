@@ -21,16 +21,17 @@ export default function Layout({ children, home }) {
 
             <Header className="grid grid-cols-1" />
 
-            <main className="p-2">
+            <main>
                 {children}
-            </main>
+            </main >
             {!home && (
                 <div className="mt-1">
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
                 </div>
-            )}
+            )
+            }
 
             <Footer />
         </>

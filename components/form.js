@@ -3,7 +3,7 @@ export default function Form() {
     return (
         <div className="py-12 relative flex flex-col justify-center overflow-hidden">
             <div
-                className="w-full p-6 m-auto bg-white rounded-md shadow-md border">
+                className="w-full p-6 m-auto rounded-md shadow-md border">
                 <p className="mb-8">We're ambitious and enjoy new challenges. Whatever your project size we're happy to help. You can get in contact by filling out our contact form below or directly sending us an email to hello@ynotinnovate.com.</p>
                 <form action="#" method="post" className="mt-6">
                     <div className="relative mb-8">
